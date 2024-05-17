@@ -17,11 +17,9 @@ import utils.ElementFetch;
 public class HomePageEvents extends BaseClass{
 	
 	ElementFetch ele =  new ElementFetch();
-	
-	
 
 	public void loginButtonClick() {
-		ele.getWebElement("CSS", HomePageElements.loginButton).click();
+		ele.getWebElement("ID", HomePageElements.loginButton).click();
 	}
 	
 	public void homeTabClick() {
@@ -37,9 +35,9 @@ public class HomePageEvents extends BaseClass{
 	}
 	
     public void verifyPageRedirection(String url, String pageName) {
-        String currentUrl = driver.getCurrentUrl();
-        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
-        wait.until(ExpectedConditions.not(ExpectedConditions.urlToBe(currentUrl)));
+//        String currentUrl = driver.getCurrentUrl();
+//        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
+//        wait.until(ExpectedConditions.not(ExpectedConditions.urlToBe(currentUrl)));
         String newUrl = driver.getCurrentUrl();
         assertEquals(newUrl, url, "Redirection to "+pageName+" quest page failed");
     }

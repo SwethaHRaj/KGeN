@@ -24,7 +24,7 @@ public class LoginPageEvents extends BaseClass {
 	
 	public void enterPhoneNumber() {
 //		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-//		wait.until(ExpectedConditions.e(ele.getWebElement("XPATH", LoginPageElements.enterPhoneTextField)));
+//		wait.until(ExpectedConditions.e(ele.getWebElement("ID", LoginPageElements.enterPhoneTextField)));
 		String mainWindowHandle = driver.getWindowHandle();
 		for (String handle : driver.getWindowHandles()) {
 		    if (!handle.equals(mainWindowHandle)) {
@@ -32,12 +32,20 @@ public class LoginPageEvents extends BaseClass {
 		        break;
 		    }
 		}
-		ele.getWebElement("XPATH", LoginPageElements.enterPhoneTextField).click();
-		ele.getWebElement("XPATH", LoginPageElements.enterPhoneTextField).sendKeys("9876543210");
+		ele.getWebElement("ID", LoginPageElements.enterPhoneTextField).click();
+		ele.getWebElement("ID", LoginPageElements.enterPhoneTextField).sendKeys("9876543210");
 	}
 	
 	public void clickVerifyButton() {
 		ele.getWebElement("XPATH", LoginPageElements.verifyButton).click();
+	}
+	
+	public void enterOtp() {
+		ele.getWebElement("XPATH", LoginPageElements.enterOtpDigitField).sendKeys("111111");
+	}
+	
+	public void clickSubmitButton() {
+		ele.getWebElement("XPATH", LoginPageElements.submitButton).click();
 	}
 
 }

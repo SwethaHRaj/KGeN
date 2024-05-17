@@ -23,18 +23,20 @@ public class NewTest extends BaseClass{
 	
   @Test
   public void login() {
-	  WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(200));
+	  WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
       wait.until(ExpectedConditions.visibilityOf(ele.getWebElement("ID", HomePageElements.loginButton)));
       homePage.loginButtonClick();
 	  loginPage.verifyIfLoginModelIsLoaded();
 	  loginPage.enterPhoneNumber();
 	  loginPage.clickVerifyButton();
-//		homePage.questsTabClick();
-//		homePage.verifyPageRedirection("https://kgen.io/gamer/quests", "Quests");
-//		homePage.homeTabClick();
-//		homePage.verifyPageRedirection("https://kgen.io/gamer", "Home");
-//		homePage.gamesTabClick();
-//		homePage.verifyPageRedirection("https://kgen.io/gamer/games", "Games");
+	  loginPage.enterOtp();
+	  loginPage.clickSubmitButton();
+		homePage.questsTabClick();
+		homePage.verifyPageRedirection("https://kgen.io/gamer/quests", "Quests");
+		homePage.homeTabClick();
+		homePage.verifyPageRedirection("https://kgen.io/gamer", "Home");
+		homePage.gamesTabClick();
+		homePage.verifyPageRedirection("https://kgen.io/gamer/games", "Games");
   }
 
 

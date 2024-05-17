@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Test Results</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">May 12, 2024 11:04:31 PM</span></a>
+<a href="#"><span class="badge badge-primary">May 18, 2024 01:02:47 am</span></a>
 </li>
 </ul>
 </div>
@@ -66,7 +66,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -74,25 +74,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="skip" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">login</p>
             <p class="text-sm">
-              <span>11:04:31 PM</span> / <span>00:01:27:714</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>1:02:49 am</span> / <span>00:01:39:247</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">login</h5>
-<span class='badge badge-success'>05.12.2024 11:04:31 PM</span>
-<span class='badge badge-danger'>05.12.2024 11:05:59 PM</span>
-<span class='badge badge-default'>00:01:27:714</span>
+<h5 class="test-status text-fail">login</h5>
+<span class='badge badge-success'>05.18.2024 1:02:49 am</span>
+<span class='badge badge-danger'>05.18.2024 1:04:28 am</span>
+<span class='badge badge-default'>00:01:39:247</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -104,10 +104,25 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>11:05:59 PM</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:04:28 am</td>
         <td>
-          <span class='badge white-text orange'>login - Testcase Skipped</span>
+          <span class='badge white-text red'>login - Testcase Failed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:04:28 am</td>
+        <td>
+          <span class='badge white-text red'>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-x40fzr" tabindex="0" role="link" target="_self" href="/gamer/quests">...</a> is not clickable at point (473, 40). Other element would receive the click: <div aria-hidden="true" class="MuiBackdrop-root MuiModal-backdrop css-919eu4" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"></div>
+  (Session info: chrome=124.0.6367.207)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2b7f536d4f1ea164f53bb2b7499d0f69, clickElement {id=f.1CCC16C4986F3CC2061AA42879D16799.d.E4463D4B25BC4ED256E006E796860667.e.62}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.207, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\sweth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60348}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60348/devtoo..., se:cdpVersion: 124.0.6367.207, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2b7f536d4f1ea164f53bb2b7499d0f69)] -> xpath: //a[@class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-x40fzr'][normalize-space()='Quests']]
+Session ID: 2b7f536d4f1ea164f53bb2b7499d0f69 - Testcase Failed</span>
         </td>
       </tr>
   </tbody>
@@ -129,13 +144,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>May 12, 2024 11:04:31 PM</h3>
+<h3>May 18, 2024 01:02:47 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>May 12, 2024 11:05:59 PM</h3>
+<h3>May 18, 2024 01:04:28 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -147,7 +162,7 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -168,8 +183,8 @@
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
-<b>1</b> skipped, <b data-tooltip='0%'>0</b> others
+<small data-tooltip='100%'><b>1</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
 </div>
@@ -188,8 +203,8 @@
 <div class="card-footer">
 <div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>1</b> others
+<small data-tooltip='100%'><b>2</b> events failed,
+<b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -205,7 +220,7 @@
 </div></div>
 <script>
 var timeline = {
-"login":87.714
+"login":99.247
 };
 </script>
 <div class="row">
@@ -233,9 +248,9 @@ var timeline = {
 var statusGroup = {
 parentCount: 5,
 passParent: 0,
-failParent: 0,
+failParent: 1,
 warningParent: 0,
-skipParent: 1,
+skipParent: 0,
 childCount: 5,
 passChild: 0,
 failChild: 0,
@@ -250,9 +265,9 @@ skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
 passEvents: 0,
-failEvents: 0,
+failEvents: 2,
 warningEvents: 0,
-skipEvents: 1,
+skipEvents: 0,
 infoEvents: 0
 };
 </script>        </div>

@@ -55,7 +55,7 @@ public void beforeMethod(String browser, Method testMethod) {
 	setupDriver(browser);
 	driver.manage().window().maximize();
 	driver.get(Constants.url);
-	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(200));
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 }
 	
 
@@ -69,7 +69,7 @@ public void afterMethod(ITestResult result) {
 	} else if(result.getStatus()==ITestResult.SUCCESS) {
 		logger.log(Status.PASS, MarkupHelper.createLabel(result.getName()+" - Testcase Pass", ExtentColor.GREEN));
 	}
-	driver.quit();
+//	driver.quit();
 }
 
 @AfterTest
